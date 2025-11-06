@@ -22,7 +22,6 @@ default_seed = 123
 n_estimators = 100
 
 
-
 def plot_confusion_matrix(y_true, y_pred):
     class_labels = list(set(y_true))
 
@@ -49,7 +48,6 @@ def plot_shap_summary(shap_values, X, mode='classification', topn=10):
 
     plt.figure(figsize=(7, 7))
 
-    #print(mode)
     ax = plt.gca()
     fig = plt.gcf()
 
@@ -176,7 +174,7 @@ def per_residue_importance(model, X, mode='classification'):
 
     # Important residues
     important_residues = {0:{}}
-    #print(f"fi_list: {len(fi_list)}")
+    
     for k, v in fi_list:
         msa_pos, amino = k.split('_')
         msa_pos = int(msa_pos.replace('p', ''))
@@ -191,7 +189,7 @@ def per_residue_importance(model, X, mode='classification'):
 
 
 def run_rfr(feature_table, seed=default_seed, mode='regression', explain="shap"):
-    sys.stderr.write(f"Run RandomForestRegressor for {feature_table}\n")
+    sys.stderr.write(f"Run RFR\n")
     df = feature_table.drop(['seq_id', 'obj_param'], axis=1)
     y = feature_table['obj_param'].values.astype(float)
     X0 = pd.get_dummies(df)
@@ -284,7 +282,6 @@ def run_xgbc(feature_table, seed=default_seed, mode='classification', explain="s
 
     X, y = shuffle(X, y, random_state=seed)
 
-    print(len(list(set(y))))
     sys.stderr.write("Compute Residue Importance...\n")
     model = xgb.XGBClassifier(n_estimators=n_estimators, random_state=seed)
 
