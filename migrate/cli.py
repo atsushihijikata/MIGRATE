@@ -11,7 +11,7 @@ def main():
     parser.add_argument("msa_file", help="MSA file")
     parser.add_argument("--target", help="Sequence Id in the MSA to assign RI scores", required=True)
     parser.add_argument("--pdbid", help="PDB ID+Chain to map the scores.")
-    parser.add_argument("--pdb-start", help="Start residue number of the sequence with known 3D.")
+    parser.add_argument("--pdb-start", type=int, default=1, help="Start residue number of the sequence with known 3D.")
     parser.add_argument("--seed", type=int, default=123, help="Seed")
     parser.add_argument("--model", help="ML model. rf=RandomForest or xgb=XGBoost", default="rf")
     parser.add_argument("--explain", help="Explain feature importance with SHAP or default feature importance (shap/default)", default="shap")
