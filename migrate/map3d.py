@@ -29,16 +29,14 @@ def map_importance(feature_table, residue_importance, class_name=None,
     seq_table = feature_table[feature_table['seq_id'].isin([target_id])]
     seq_table = seq_table.drop(['seq_id', 'obj_param'], axis=1)
 
-    pos = 0
+    pos, i = 0, 1
     positions, t_seq = {}, ""
-    i = 1
     for col, val in seq_table.items():
         msa_pos = i
         aa = val.values[0]
         if aa != '-':
             pos += 1
             t_seq += aa
-            #print(p, pos, aa, col)
             try:
                 positions[pos] = (residue_importance[msa_pos]['total'], msa_pos)
             except:
@@ -63,7 +61,7 @@ def map_importance(feature_table, residue_importance, class_name=None,
 
         with open(tsv_file, "w") as out:
             out.write("\t".join(map(str, [
-                "msa_pos", "seqid", "pos", "pos_3d", "aa", "importance"
+                "msa_pos", "seqid", "pos", "pos_3d", "aa", "ri_score"
             ])) + "\n")
             for res, val in positions.items():
                 imp, msa_pos = val
@@ -95,8 +93,25 @@ def map_importance(feature_table, residue_importance, class_name=None,
     else:
         with open(tsv_file, "w") as out:
             out.write("\t".join(map(str, [
-                "msa_pos", "seqid", "pos", "aa", "shapley"
+                "msa_pos", "seqid", "pos", "aa", "ri_score"
             ])) + "\n")
+            pos, i = 0, 1
+            for col, val in seq_table.items():
+                msa_pos = i
+                aa = val.values[0]
+                imp = residue_importance[msa_pos]['total']
+                if aa != "-":
+                    pos += 1
+                    out.write("\t".join(map(str, [
+                        msa_pos, target_id, pos, aa, imp
+                    ])) +"\n")
+                else:
+                    out.write("\t".join(map(str, [
+                        msa_pos, target_id, -1, aa, imp
+                    ])) +"\n")
+                i += 1
+
+            '''
             for res, val in positions.items():
                 imp, msa_pos = val
                 aa = t_seq[k]
@@ -106,3 +121,4 @@ def map_importance(feature_table, residue_importance, class_name=None,
                     msa_pos, target_id, res, aa, imp
                 ])) + "\n")
                 k += 1
+            '''

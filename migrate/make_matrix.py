@@ -51,7 +51,7 @@ def make_importance_matrix(feature_table, residue_importance, class_name=None):
     with open(outfile, "w") as out:
         out.write("\t".join(map(str, [
             "msa_pos",
-            "shapley",
+            "RI_score",
             "\t".join(map(str, aminos)),
             "\t".join(map(str, aminos)),
             "entropy"
@@ -59,11 +59,11 @@ def make_importance_matrix(feature_table, residue_importance, class_name=None):
 
         for pos, counts in position_count_matrix.items():
             apos = int(pos.replace('p', ''))
-            shapley = residue_importance[apos]["total"]
+            ri_score = residue_importance[apos]["total"]
             entropy = calc_sequence_entropy(counts)
             out.write("\t".join(map(str, [
                 apos,
-                shapley,
+                ri_score,
                 "\t".join(map(str, [residue_importance[apos][aa] for aa in aminos])),
                 "\t".join(map(str, [counts[aa] for aa in aminos])),
                 f"{entropy:.4f}"
