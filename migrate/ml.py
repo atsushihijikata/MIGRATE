@@ -49,7 +49,7 @@ def plot_shap_summary(shap_values, X, mode='classification', topn=10):
 
     plt.figure(figsize=(7, 7))
 
-    print(mode)
+    #print(mode)
     ax = plt.gca()
     fig = plt.gcf()
 
@@ -80,7 +80,6 @@ def cross_valid(model, X, y, mode=None, seed=default_seed):
     y_true, y_pred = [], []
 
     for train_index, test_index in cv.split(X):
-        print("Hello")
         X_train, X_test = X[train_index], X[test_index]
         y_train, y_test = y[train_index], y[test_index]
 
