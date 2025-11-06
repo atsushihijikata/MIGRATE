@@ -34,9 +34,8 @@ migrate msa_file --target seq_id [--mode classification]
 ### Example
 
 ```bash
-
-migrate migrate/data/Luc_cls.fas --target Luciola_cruciata_AB220162.554_562nm.pdb2d1tA \
-                                 --pdbid 2d1tA --pdb-start 1 \
+migrate migrate/data/Myb_cls.fas --target Msp.Q0KIY5.3.MYG.KOGBR.pygmy.sperm.whale \
+                                 --pdbid 6bmgA --pdb-start 0 \
                                  --mode classification \
                                  --seed 123 
 
