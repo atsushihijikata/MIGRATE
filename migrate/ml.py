@@ -120,8 +120,8 @@ def per_residue_shapley(model, X, mode='classification'):
         mean_shap = np.mean(np.abs(shap_values), axis=0)
 
     #print("Mean SHAP shape:", mean_shap.shape)
-    df = pd.DataFrame(mean_shap)
-    df.to_csv("mean_shap.tsv", sep='\t')
+    # df = pd.DataFrame(mean_shap)
+    # df.to_csv("mean_shap.tsv", sep='\t')
 
     sc = mean_shap[0]
     n_class = 1
