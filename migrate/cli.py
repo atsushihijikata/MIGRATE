@@ -51,9 +51,8 @@ def main():
     for cls, ri_score in residue_importance.items():
         if cls == 0:
             cls = None
-        if pdbid is not None:
-            map_importance(feature_table, ri_score, class_name=cls,
-                           target_id=target, pdb_id=pdbid, pdb_start=int(start))
+        map_importance(feature_table, ri_score, class_name=cls,
+                       target_id=target, pdb_id=pdbid, pdb_start=int(start))
 
         make_importance_matrix(feature_table, ri_score, class_name=cls)
 
