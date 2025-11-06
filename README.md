@@ -27,7 +27,7 @@ pip install .
 
 ```bash
 
-migrate msa_file --known3d seq_id_with_3d --pdbid pdb_id_chain
+migrate msa_file --target seq_id [--mode classification]
 
 ```
 
