@@ -8,7 +8,7 @@ from .make_matrix import make_importance_matrix
 def main():
 
     parser = argparse.ArgumentParser(description="MIGRATE: Machine learning-based Identification of Globally Adaptive Amino-acid Residues Associated with Tolerance to diverse Environments.")
-    parser.add_argument("msa_file", help="MSA file", required=True)
+    parser.add_argument("msa_file", help="MSA file")
     parser.add_argument("--target", help="Sequence Id in the MSA to assign RI scores", required=True)
     parser.add_argument("--pdbid", help="PDB ID+Chain to map the scores.")
     parser.add_argument("--pdb-start", help="Start residue number of the sequence with known 3D.")
