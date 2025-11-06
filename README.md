@@ -36,7 +36,9 @@ migrate msa_file --target seq_id [--mode classification]
 ```bash
 
 migrate migrate/data/Luc_cls.fas --target Luciola_cruciata_AB220162.554_562nm.pdb2d1tA \
-                                 --mode classification
+                                 --pdbid 2d1tA --pdb-start 1 \
+                                 --mode classification \
+                                 --seed 123 
 
 migrate migrate/data/GFP_rgr.fas --target mKalama1 \
                                  --pdbid 4ornB \
