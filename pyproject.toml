@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+authors = [
+    {name = "Atsushi Hijikata", email = "hijikata@toyaku.ac.jp"},
+]
+maintainers = [
+    {name = "Atsushi Hijikata", email = "hijikata@toyaku.ac.jp"},
+]
+name = "migrate"
+version = "1.0.3"
+description = "An explainable-AI for identification of amino acid residues associated with environmental adaptation/functional traits"
+requires-python = ">=3.9"
+dependencies = [
+    "scikit-learn>=1.6.0",
+    "xgboost",
+    "requests",
+    "pandas",
+    "seaborn",
+    "matplotlib",
+    "numpy",
+    "shap",
+]
+readme = "README.md"
+
+[project.scripts]
+migrate = "migrate.cli:main"
