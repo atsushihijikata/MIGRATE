@@ -29,7 +29,6 @@ def map_importance(feature_table, residue_importance, class_name=None,
     seq_table = feature_table[feature_table['seq_id'].isin([target_id])]
     seq_table = seq_table.drop(['seq_id', 'obj_param'], axis=1)
 
-    pdb_chain = pdb_id[-1]
     pos = 0
     positions, t_seq = {}, ""
     i = 1
@@ -56,6 +55,7 @@ def map_importance(feature_table, residue_importance, class_name=None,
         tsv_file = f"residue_importance_{target_id}.tsv"
 
     if pdb_id is not None:
+        pdb_chain = pdb_id[-1]
         if class_name is not None:
             cxc_file = f"residue_importance_{class_name}_{pdb_id}.cxc"
         else:
