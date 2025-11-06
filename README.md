@@ -42,7 +42,8 @@ migrate migrate/data/Myb_cls.fas --target Msp.Q0KIY5.3.MYG.KOGBR.pygmy.sperm.wha
 migrate migrate/data/GFP_rgr.fas --target mKalama1 \
                                  --pdbid 4ornB \
                                  --pdb-start 0 \
-                                 --mode regression
+                                 --mode regression \
+                                 --seed 123 
 
 ```
 
