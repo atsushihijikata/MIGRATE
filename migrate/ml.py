@@ -168,8 +168,6 @@ def per_residue_shapley(model, X, mode='classification'):
                     max_values[pos] = v
         shapley_residues["maxshap"] = max_values
 
-    print("shapley_residues=", shapley_residues.keys())
-
     return shapley_residues
 
 
