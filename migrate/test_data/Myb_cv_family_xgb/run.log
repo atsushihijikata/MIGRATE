@@ -1,0 +1,157 @@
+Read MSA file...
+Feature table: (272, 158)
+Run XGBClassifier...
+Compute Residue Importance...
+Leave-one-group-out CV: 125 groups
+Write per-sequence CV predictions to cv_predictions.tsv
+Compute Shapley values for each features...
+Number of sequences per group:
+label   L  M
+group       
+1       9  0
+2      10  0
+3       3  0
+4       1  0
+5       1  0
+...    .. ..
+121     1  0
+122     1  0
+123     2  0
+124     1  0
+125     7  0
+
+[125 rows x 2 columns]
+Group 1: train F1 = 1.0, validation F1 = 0.35714285714285715
+Group 2: train F1 = 1.0, validation F1 = 1.0
+Group 3: train F1 = 1.0, validation F1 = 1.0
+Group 4: train F1 = 1.0, validation F1 = 1.0
+Group 5: train F1 = 1.0, validation F1 = 1.0
+Group 6: train F1 = 1.0, validation F1 = 1.0
+Group 7: train F1 = 1.0, validation F1 = 1.0
+Group 8: train F1 = 1.0, validation F1 = 1.0
+Group 9: train F1 = 1.0, validation F1 = 1.0
+Group 10: train F1 = 1.0, validation F1 = 1.0
+Group 11: train F1 = 1.0, validation F1 = 1.0
+Group 12: train F1 = 1.0, validation F1 = 1.0
+Group 13: train F1 = 1.0, validation F1 = 1.0
+Group 14: train F1 = 1.0, validation F1 = 1.0
+Group 15: train F1 = 1.0, validation F1 = 1.0
+Group 16: train F1 = 1.0, validation F1 = 1.0
+Group 17: train F1 = 1.0, validation F1 = 1.0
+Group 18: train F1 = 1.0, validation F1 = 1.0
+Group 19: train F1 = 1.0, validation F1 = 1.0
+Group 20: train F1 = 1.0, validation F1 = 1.0
+Group 21: train F1 = 1.0, validation F1 = 1.0
+Group 22: train F1 = 1.0, validation F1 = 1.0
+Group 23: train F1 = 1.0, validation F1 = 1.0
+Group 24: train F1 = 1.0, validation F1 = 1.0
+Group 25: train F1 = 1.0, validation F1 = 1.0
+Group 26: train F1 = 1.0, validation F1 = 1.0
+Group 27: train F1 = 1.0, validation F1 = 1.0
+Group 28: train F1 = 1.0, validation F1 = 1.0
+Group 29: train F1 = 1.0, validation F1 = 1.0
+Group 30: train F1 = 1.0, validation F1 = 1.0
+Group 31: train F1 = 1.0, validation F1 = 1.0
+Group 32: train F1 = 1.0, validation F1 = 1.0
+Group 33: train F1 = 1.0, validation F1 = 1.0
+Group 34: train F1 = 1.0, validation F1 = 1.0
+Group 35: train F1 = 1.0, validation F1 = 1.0
+Group 36: train F1 = 1.0, validation F1 = 1.0
+Group 37: train F1 = 1.0, validation F1 = 0.4444444444444444
+Group 38: train F1 = 1.0, validation F1 = 1.0
+Group 39: train F1 = 1.0, validation F1 = 1.0
+Group 40: train F1 = 1.0, validation F1 = 1.0
+Group 41: train F1 = 1.0, validation F1 = 1.0
+Group 42: train F1 = 1.0, validation F1 = 1.0
+Group 43: train F1 = 1.0, validation F1 = 1.0
+Group 44: train F1 = 1.0, validation F1 = 1.0
+Group 45: train F1 = 1.0, validation F1 = 1.0
+Group 46: train F1 = 1.0, validation F1 = 1.0
+Group 47: train F1 = 1.0, validation F1 = 1.0
+Group 48: train F1 = 1.0, validation F1 = 1.0
+Group 49: train F1 = 1.0, validation F1 = 1.0
+Group 50: train F1 = 1.0, validation F1 = 1.0
+Group 51: train F1 = 1.0, validation F1 = 1.0
+Group 52: train F1 = 1.0, validation F1 = 1.0
+Group 53: train F1 = 1.0, validation F1 = 1.0
+Group 54: train F1 = 1.0, validation F1 = 1.0
+Group 55: train F1 = 1.0, validation F1 = 1.0
+Group 56: train F1 = 1.0, validation F1 = 0.14285714285714285
+Group 57: train F1 = 1.0, validation F1 = 1.0
+Group 58: train F1 = 0.9920800211199436, validation F1 = 0.0
+Group 59: train F1 = 1.0, validation F1 = 1.0
+Group 60: train F1 = 1.0, validation F1 = 1.0
+Group 61: train F1 = 1.0, validation F1 = 1.0
+Group 62: train F1 = 1.0, validation F1 = 1.0
+Group 63: train F1 = 1.0, validation F1 = 1.0
+Group 64: train F1 = 1.0, validation F1 = 1.0
+Group 65: train F1 = 1.0, validation F1 = 1.0
+Group 66: train F1 = 1.0, validation F1 = 1.0
+Group 67: train F1 = 1.0, validation F1 = 1.0
+Group 68: train F1 = 1.0, validation F1 = 1.0
+Group 69: train F1 = 1.0, validation F1 = 1.0
+Group 70: train F1 = 1.0, validation F1 = 1.0
+Group 71: train F1 = 1.0, validation F1 = 1.0
+Group 72: train F1 = 1.0, validation F1 = 1.0
+Group 73: train F1 = 1.0, validation F1 = 1.0
+Group 74: train F1 = 1.0, validation F1 = 1.0
+Group 75: train F1 = 1.0, validation F1 = 1.0
+Group 76: train F1 = 1.0, validation F1 = 1.0
+Group 77: train F1 = 1.0, validation F1 = 1.0
+Group 78: train F1 = 1.0, validation F1 = 1.0
+Group 79: train F1 = 1.0, validation F1 = 1.0
+Group 80: train F1 = 1.0, validation F1 = 1.0
+Group 81: train F1 = 1.0, validation F1 = 0.0
+Group 82: train F1 = 1.0, validation F1 = 1.0
+Group 83: train F1 = 1.0, validation F1 = 1.0
+Group 84: train F1 = 1.0, validation F1 = 1.0
+Group 85: train F1 = 1.0, validation F1 = 1.0
+Group 86: train F1 = 1.0, validation F1 = 1.0
+Group 87: train F1 = 1.0, validation F1 = 1.0
+Group 88: train F1 = 1.0, validation F1 = 1.0
+Group 89: train F1 = 1.0, validation F1 = 1.0
+Group 90: train F1 = 1.0, validation F1 = 1.0
+Group 91: train F1 = 1.0, validation F1 = 1.0
+Group 92: train F1 = 1.0, validation F1 = 1.0
+Group 93: train F1 = 1.0, validation F1 = 1.0
+Group 94: train F1 = 1.0, validation F1 = 1.0
+Group 95: train F1 = 1.0, validation F1 = 1.0
+Group 96: train F1 = 1.0, validation F1 = 1.0
+Group 97: train F1 = 1.0, validation F1 = 1.0
+Group 98: train F1 = 1.0, validation F1 = 1.0
+Group 99: train F1 = 1.0, validation F1 = 1.0
+Group 100: train F1 = 1.0, validation F1 = 1.0
+Group 101: train F1 = 1.0, validation F1 = 1.0
+Group 102: train F1 = 1.0, validation F1 = 1.0
+Group 103: train F1 = 1.0, validation F1 = 1.0
+Group 104: train F1 = 1.0, validation F1 = 1.0
+Group 105: train F1 = 1.0, validation F1 = 1.0
+Group 106: train F1 = 1.0, validation F1 = 1.0
+Group 107: train F1 = 1.0, validation F1 = 1.0
+Group 108: train F1 = 1.0, validation F1 = 1.0
+Group 109: train F1 = 1.0, validation F1 = 1.0
+Group 110: train F1 = 1.0, validation F1 = 1.0
+Group 111: train F1 = 1.0, validation F1 = 1.0
+Group 112: train F1 = 1.0, validation F1 = 1.0
+Group 113: train F1 = 1.0, validation F1 = 1.0
+Group 114: train F1 = 1.0, validation F1 = 1.0
+Group 115: train F1 = 1.0, validation F1 = 1.0
+Group 116: train F1 = 1.0, validation F1 = 1.0
+Group 117: train F1 = 1.0, validation F1 = 1.0
+Group 118: train F1 = 1.0, validation F1 = 1.0
+Group 119: train F1 = 1.0, validation F1 = 1.0
+Group 120: train F1 = 1.0, validation F1 = 1.0
+Group 121: train F1 = 1.0, validation F1 = 1.0
+Group 122: train F1 = 1.0, validation F1 = 1.0
+Group 123: train F1 = 1.0, validation F1 = 1.0
+Group 124: train F1 = 1.0, validation F1 = 1.0
+Group 125: train F1 = 1.0, validation F1 = 1.0
+Confusion Matrix
+[[225   8]
+ [  7  32]]
+ROC-AUC: 0.9880048420820953
+Accuracy: 0.9448529411764706
+MCC: 0.7779598676112679
+Train F1 (mean over folds): 0.9999366401689596
+Validation F1 (mean over folds): 0.9675555555555555
+F1-score: 0.8889342588811759

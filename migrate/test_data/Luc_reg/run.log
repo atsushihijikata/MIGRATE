@@ -1,0 +1,27 @@
+Read MSA file...
+[Warning] No Param for Luciola_terminalis_EU302126.nd. Skipped.
+[Warning] No Param for Hotaria_unmunsana_Uc_AF420006.nd. Skipped.
+[Warning] No Param for Lampyroidea_maculata_DQ137139.nd. Skipped.
+[Warning] No Param for Nyctophila_caucasica_DQ72141.nd. Skipped.
+[Warning] No Param for Pyrocoelia_pygidialis_ACF61063.nd. Skipped.
+[Warning] No Param for Pyrocoelia_rufa_AF328553.nd. Skipped.
+[Warning] No Param for Pyrocoelia_pectoralis_EF155570.nd. Skipped.
+[Warning] No Param for Diaphanes_pectinealis_DQ408300.nd. Skipped.
+[Warning] No Param for Photinus_pyralis_M15077.nd. Skipped.
+[Warning] No Param for Pyrophorus_mellifluus_sdGR_AF545854.nd. Skipped.
+[Warning] No Param for Pyrophorus_mellifluus_vGR_AF545853.nd. Skipped.
+[Warning] No Param for PaLL_Pyrophorus_angustusluscus_AB479114. Skipped.
+[Warning] No Param for AbLL_Agrypnus_binodulusbinodulus_AB353886. Skipped.
+[Warning] No Param for TmLL1_Tenebrio_molitortm_AB098615. Skipped.
+[Warning] No Param for TmLL2_Tenebrio_molitortm_AB098616. Skipped.
+[Warning] No Param for TmLL3_Tenebrio_molitortm_AB098617. Skipped.
+[Warning] No Param for LcL1_Luciola_cruciatam_AB196455. Skipped.
+[Warning] No Param for LcL2_Luciola_cruciata_AB196456. Skipped.
+[Warning] No Param for CG6178_Drosophila_melanogaster_NM142964. Skipped.
+Feature table: (33, 557)
+Run RFR
+Compute Residue Importance...
+Compute Shapley values for each features...
+corrcoef: 0.3766040885232372
+rho: 0.6026280048867909, 0.00020627364549248705
+RMSE: 15.849853741797231
